@@ -14,7 +14,6 @@ st.header("Search Across Documents in Natural Language")
 
 def generate_response(query):
     index = generate_or_return_embeddings()
-    #llm = OpenAI(temperature=0.5, openai_api_key=openai_api_key)
     response = query_chroma(index, query)
     st.markdown(response)
 
