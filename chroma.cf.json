@@ -1,0 +1,262 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Create a stack that runs Chroma hosted on a single instance",
+    "Parameters": {
+        "KeyName": {
+            "Description": "Name of an existing EC2 KeyPair to enable SSH access to the instance",
+            "Type": "String",
+            "ConstraintDescription": "If present, must be the name of an existing EC2 KeyPair.",
+            "Default": ""
+        },
+        "InstanceType": {
+            "Description": "EC2 instance type",
+            "Type": "String",
+            "Default": "t3.small"
+        },
+        "ChromaVersion": {
+            "Description": "Chroma version to install",
+            "Type": "String",
+            "Default": "0.4.3"
+        }
+    },
+    "Conditions": {
+        "HasKeyName": {
+            "Fn::Not": [
+                {
+                    "Fn::Equals": [
+                        {
+                            "Ref": "KeyName"
+                        },
+                        ""
+                    ]
+                }
+            ]
+        }
+    },
+    "Resources": {
+        "ChromaInstance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "ImageId": {
+                    "Fn::FindInMap": [
+                        "Region2AMI",
+                        {
+                            "Ref": "AWS::Region"
+                        },
+                        "AMI"
+                    ]
+                },
+                "InstanceType": {
+                    "Ref": "InstanceType"
+                },
+                "UserData": {
+                    "Fn::Base64": {
+                        "Fn::Join": [
+                            "",
+                            [
+                                "Content-Type: multipart/mixed; boundary=\"//\"\n",
+                                "MIME-Version: 1.0\n",
+                                "\n",
+                                "--//\n",
+                                "Content-Type: text/cloud-config; charset=\"us-ascii\"\n",
+                                "MIME-Version: 1.0\n",
+                                "Content-Transfer-Encoding: 7bit\n",
+                                "Content-Disposition: attachment; filename=\"cloud-config.txt\"\n",
+                                "\n",
+                                "\n",
+                                "#cloud-config\n",
+                                "cloud_final_modules:\n",
+                                "- [scripts-user, always]\n",
+                                "\n",
+                                "\n",
+                                "--//\n",
+                                "Content-Type: text/x-shellscript; charset=\"us-ascii\"\n",
+                                "MIME-Version: 1.0\n",
+                                "Content-Transfer-Encoding: 7bit\n",
+                                "Content-Disposition: attachment; filename=\"userdata.txt\"\n",
+                                "\n",
+                                "\n",
+                                "#!/bin/bash\n",
+                                "amazon-linux-extras install docker\n",
+                                "usermod -a -G docker ec2-user\n",
+                                "curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose\n",
+                                "chmod +x /usr/local/bin/docker-compose\n",
+                                "ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose\n",
+                                "systemctl enable docker\n",
+                                "systemctl start docker\n",
+                                "\n",
+                                "cat << EOF > /home/ec2-user/docker-compose.yml\n",
+                                "version: '3.9'\n",
+                                "\n",
+                                "networks:\n",
+                                "  net:\n",
+                                "    driver: bridge\n",
+                                "\n",
+                                "services:\n",
+                                "  server:\n",
+                                {
+                                    "Fn::Sub": "    image: ghcr.io/chroma-core/chroma:${ChromaVersion}\n"
+                                },
+                                "    volumes:\n",
+                                "      - index_data:/index_data\n",
+                                "    ports:\n",
+                                "      - 8000:8000\n",
+                                "    networks:\n",
+                                "      - net\n",
+                                "\n",
+                                "volumes:\n",
+                                "  index_data:\n",
+                                "    driver: local\n",
+                                "  backups:\n",
+                                "    driver: local\n",
+                                "\n",
+                                "EOF\n",
+                                "\n",
+                                "mkdir /home/ec2-user/config\n",
+                                "\n",
+                                "docker-compose -f /home/ec2-user/docker-compose.yml up -d\n",
+                                "\n",
+                                "--//--\n"
+                            ]
+                        ]
+                    }
+                },
+                "SecurityGroupIds": [
+                    {
+                        "Ref": "ChromaInstanceSecurityGroup"
+                    }
+                ],
+                "KeyName": {
+                    "Fn::If": [
+                        "HasKeyName",
+                        {
+                            "Ref": "KeyName"
+                        },
+                        {
+                            "Ref": "AWS::NoValue"
+                        }
+                    ]
+                },
+                "BlockDeviceMappings": [
+                    {
+                        "DeviceName": {
+                            "Fn::FindInMap": [
+                                "Region2AMI",
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "RootDeviceName"
+                            ]
+                        },
+                        "Ebs": {
+                            "VolumeSize": 24
+                        }
+                    }
+                ]
+            }
+        },
+        "ChromaInstanceSecurityGroup": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "GroupDescription": "Chroma Instance Security Group",
+                "SecurityGroupIngress": [
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "22",
+                        "ToPort": "22",
+                        "CidrIp": "0.0.0.0/0"
+                    },
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "8000",
+                        "ToPort": "8000",
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ]
+            }
+        }
+    },
+    "Outputs": {
+        "ServerIp": {
+            "Description": "IP address of the Chroma server",
+            "Value": {
+                "Fn::GetAtt": [
+                    "ChromaInstance",
+                    "PublicIp"
+                ]
+            }
+        }
+    },
+    "Mappings": {
+        "Region2AMI": {
+            "ap-south-1": {
+                "AMI": "ami-0a26068186838e542",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-north-1": {
+                "AMI": "ami-01ce879f05d1420b0",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-west-3": {
+                "AMI": "ami-0b21eaa92eca97099",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-west-2": {
+                "AMI": "ami-0843430f8828ab90b",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-west-1": {
+                "AMI": "ami-081f44694d394936b",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-northeast-3": {
+                "AMI": "ami-090ae0a4750988734",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-northeast-2": {
+                "AMI": "ami-033a6a056910d1137",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-northeast-1": {
+                "AMI": "ami-098c4ba022b905c3c",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ca-central-1": {
+                "AMI": "ami-088d4832275406edf",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "sa-east-1": {
+                "AMI": "ami-0c5cdf1548242305d",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-southeast-1": {
+                "AMI": "ami-0b89f7b3f054b957e",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "ap-southeast-2": {
+                "AMI": "ami-067e6178c7a211324",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "eu-central-1": {
+                "AMI": "ami-0d79ebfba811235cd",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "us-east-1": {
+                "AMI": "ami-0a400300cff0c4af7",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "us-east-2": {
+                "AMI": "ami-0b614a5d911900a9b",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "us-west-1": {
+                "AMI": "ami-0583a1f1cd3c11ebc",
+                "RootDeviceName": "/dev/xvda"
+            },
+            "us-west-2": {
+                "AMI": "ami-00f7e5c52c0f43726",
+                "RootDeviceName": "/dev/xvda"
+            }
+        }
+    }
+}

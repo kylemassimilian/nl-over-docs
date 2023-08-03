@@ -1,0 +1,311 @@
+2023-08-01 19:36:27 INFO     uvicorn.error   Will watch for changes in these directories: ['/chroma']
+2023-08-01 19:36:27 INFO     uvicorn.error   Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2023-08-01 19:36:27 INFO     uvicorn.error   Started reloader process [1] using WatchFiles
+2023-08-01 19:36:29 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 19:36:30 DEBUG    chromadb.config Starting component System
+2023-08-01 19:36:30 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 19:36:30 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 19:36:30 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 19:36:30 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 19:36:30 INFO     uvicorn.error   Started server process [7]
+2023-08-01 19:36:30 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 19:36:30 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:16:59 INFO     uvicorn.error   Shutting down
+2023-08-01 20:16:59 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:16:59 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:16:59 INFO     uvicorn.error   Finished server process [7]
+2023-08-01 20:17:00 INFO     uvicorn.error   Stopping reloader process [1]
+2023-08-01 20:17:01 INFO     uvicorn.error   Will watch for changes in these directories: ['/chroma']
+2023-08-01 20:17:01 INFO     uvicorn.error   Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2023-08-01 20:17:01 INFO     uvicorn.error   Started reloader process [1] using WatchFiles
+2023-08-01 20:17:02 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:17:03 DEBUG    chromadb.config Starting component System
+2023-08-01 20:17:03 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:17:03 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:17:03 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:17:03 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:17:03 INFO     uvicorn.error   Started server process [8]
+2023-08-01 20:17:03 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:17:03 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:37:01 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py', 'app.py'. Reloading...
+2023-08-01 20:37:02 INFO     uvicorn.error   Shutting down
+2023-08-01 20:37:02 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:37:02 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:37:02 INFO     uvicorn.error   Finished server process [8]
+2023-08-01 20:37:03 WARNING  uvicorn.error   WatchFiles detected changes in 'query_docs.py'. Reloading...
+2023-08-01 20:37:06 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:37:08 DEBUG    chromadb.config Starting component System
+2023-08-01 20:37:08 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:37:08 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:37:09 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:37:09 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:37:09 INFO     uvicorn.error   Started server process [34]
+2023-08-01 20:37:09 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:37:09 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:37:41 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:37:42 INFO     uvicorn.error   Shutting down
+2023-08-01 20:37:42 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:37:42 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:37:42 INFO     uvicorn.error   Finished server process [34]
+2023-08-01 20:37:43 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:37:43 DEBUG    chromadb.config Starting component System
+2023-08-01 20:37:43 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:37:43 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:37:43 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:37:43 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:37:43 INFO     uvicorn.error   Started server process [76]
+2023-08-01 20:37:43 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:37:43 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:38:15 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:38:15 INFO     uvicorn.error   Shutting down
+2023-08-01 20:38:15 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:38:15 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:38:15 INFO     uvicorn.error   Finished server process [76]
+2023-08-01 20:38:16 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:38:17 DEBUG    chromadb.config Starting component System
+2023-08-01 20:38:17 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:38:17 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:38:17 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:38:17 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:38:17 INFO     uvicorn.error   Started server process [118]
+2023-08-01 20:38:17 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:38:17 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:39:19 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:39:19 INFO     uvicorn.error   Shutting down
+2023-08-01 20:39:19 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:39:19 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:39:19 INFO     uvicorn.error   Finished server process [118]
+2023-08-01 20:39:20 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:39:21 DEBUG    chromadb.config Starting component System
+2023-08-01 20:39:21 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:39:21 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:39:21 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:39:21 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:39:21 INFO     uvicorn.error   Started server process [161]
+2023-08-01 20:39:21 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:39:21 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:42:17 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:42:17 INFO     uvicorn.error   Shutting down
+2023-08-01 20:42:17 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:42:17 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:42:17 INFO     uvicorn.error   Finished server process [161]
+2023-08-01 20:42:19 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:42:19 DEBUG    chromadb.config Starting component System
+2023-08-01 20:42:19 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:42:19 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:42:19 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:42:19 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:42:19 INFO     uvicorn.error   Started server process [244]
+2023-08-01 20:42:19 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:42:19 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:42:21 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:42:21 INFO     uvicorn.error   Shutting down
+2023-08-01 20:42:22 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:42:22 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:42:22 INFO     uvicorn.error   Finished server process [244]
+2023-08-01 20:42:23 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:42:23 DEBUG    chromadb.config Starting component System
+2023-08-01 20:42:23 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:42:23 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:42:23 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:42:23 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:42:23 INFO     uvicorn.error   Started server process [261]
+2023-08-01 20:42:23 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:42:23 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:44:04 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:44:04 INFO     uvicorn.error   Shutting down
+2023-08-01 20:44:04 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:44:04 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:44:04 INFO     uvicorn.error   Finished server process [261]
+2023-08-01 20:44:06 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:44:07 DEBUG    chromadb.config Starting component System
+2023-08-01 20:44:07 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:44:07 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:44:07 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:44:07 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:44:07 INFO     uvicorn.error   Started server process [344]
+2023-08-01 20:44:07 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:44:07 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:44:08 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:44:08 INFO     uvicorn.error   Shutting down
+2023-08-01 20:44:08 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:44:08 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:44:08 INFO     uvicorn.error   Finished server process [344]
+2023-08-01 20:44:09 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:44:10 DEBUG    chromadb.config Starting component System
+2023-08-01 20:44:10 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:44:10 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:44:10 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:44:10 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:44:10 INFO     uvicorn.error   Started server process [361]
+2023-08-01 20:44:10 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:44:10 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:44:17 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:44:17 INFO     uvicorn.error   Shutting down
+2023-08-01 20:44:17 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:44:17 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:44:17 INFO     uvicorn.error   Finished server process [361]
+2023-08-01 20:44:18 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:44:19 DEBUG    chromadb.config Starting component System
+2023-08-01 20:44:19 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:44:19 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:44:19 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:44:19 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:44:19 INFO     uvicorn.error   Started server process [378]
+2023-08-01 20:44:19 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:44:19 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:44:28 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:44:28 INFO     uvicorn.error   Shutting down
+2023-08-01 20:44:28 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:44:28 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:44:28 INFO     uvicorn.error   Finished server process [378]
+2023-08-01 20:44:30 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:44:31 DEBUG    chromadb.config Starting component System
+2023-08-01 20:44:31 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:44:31 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:44:31 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:44:31 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:44:31 INFO     uvicorn.error   Started server process [395]
+2023-08-01 20:44:31 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:44:31 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:44:32 WARNING  uvicorn.error   WatchFiles detected changes in 'build_index.py'. Reloading...
+2023-08-01 20:44:32 INFO     uvicorn.error   Shutting down
+2023-08-01 20:44:32 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:44:32 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:44:32 INFO     uvicorn.error   Finished server process [395]
+2023-08-01 20:44:34 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:44:35 DEBUG    chromadb.config Starting component System
+2023-08-01 20:44:35 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:44:35 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:44:35 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:44:35 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:44:35 INFO     uvicorn.error   Started server process [412]
+2023-08-01 20:44:35 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:44:35 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:44:52 WARNING  uvicorn.error   WatchFiles detected changes in 'app.py'. Reloading...
+2023-08-01 20:44:52 INFO     uvicorn.error   Shutting down
+2023-08-01 20:44:52 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:44:52 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:44:52 INFO     uvicorn.error   Finished server process [412]
+2023-08-01 20:44:53 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:44:54 DEBUG    chromadb.config Starting component System
+2023-08-01 20:44:54 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:44:54 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:44:54 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:44:54 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:44:54 INFO     uvicorn.error   Started server process [429]
+2023-08-01 20:44:54 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:44:54 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:44:58 WARNING  uvicorn.error   WatchFiles detected changes in 'app.py'. Reloading...
+2023-08-01 20:44:58 INFO     uvicorn.error   Shutting down
+2023-08-01 20:44:58 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:44:58 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:44:58 INFO     uvicorn.error   Finished server process [429]
+2023-08-01 20:44:59 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:45:00 DEBUG    chromadb.config Starting component System
+2023-08-01 20:45:00 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:45:00 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:45:00 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:45:00 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:45:00 INFO     uvicorn.error   Started server process [446]
+2023-08-01 20:45:00 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:45:00 INFO     uvicorn.error   Application startup complete.
+2023-08-01 20:47:45 WARNING  uvicorn.error   WatchFiles detected changes in 'app.py'. Reloading...
+2023-08-01 20:47:45 INFO     uvicorn.error   Shutting down
+2023-08-01 20:47:45 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 20:47:45 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 20:47:45 INFO     uvicorn.error   Finished server process [446]
+2023-08-01 20:47:47 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 20:47:48 DEBUG    chromadb.config Starting component System
+2023-08-01 20:47:48 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 20:47:48 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 20:47:48 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 20:47:48 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 20:47:48 INFO     uvicorn.error   Started server process [463]
+2023-08-01 20:47:48 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 20:47:48 INFO     uvicorn.error   Application startup complete.
+2023-08-01 21:17:31 INFO     uvicorn.error   Shutting down
+2023-08-01 21:17:31 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 21:17:31 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 21:17:31 INFO     uvicorn.error   Finished server process [463]
+2023-08-01 21:17:32 INFO     uvicorn.error   Stopping reloader process [1]
+2023-08-01 21:17:35 INFO     uvicorn.error   Will watch for changes in these directories: ['/chroma']
+2023-08-01 21:17:35 INFO     uvicorn.error   Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2023-08-01 21:17:35 INFO     uvicorn.error   Started reloader process [1] using WatchFiles
+2023-08-01 21:17:37 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 21:17:38 DEBUG    chromadb.config Starting component System
+2023-08-01 21:17:38 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 21:17:38 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 21:17:38 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 21:17:38 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 21:17:38 INFO     uvicorn.error   Started server process [8]
+2023-08-01 21:17:38 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 21:17:38 INFO     uvicorn.error   Application startup complete.
+2023-08-01 21:45:33 WARNING  uvicorn.error   WatchFiles detected changes in 'app.py'. Reloading...
+2023-08-01 21:45:33 INFO     uvicorn.error   Shutting down
+2023-08-01 21:45:33 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-01 21:45:33 INFO     uvicorn.error   Application shutdown complete.
+2023-08-01 21:45:33 INFO     uvicorn.error   Finished server process [8]
+2023-08-01 21:45:36 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-01 21:45:37 DEBUG    chromadb.config Starting component System
+2023-08-01 21:45:37 DEBUG    chromadb.config Starting component Posthog
+2023-08-01 21:45:37 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-01 21:45:37 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-01 21:45:37 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-01 21:45:37 INFO     uvicorn.error   Started server process [61]
+2023-08-01 21:45:37 INFO     uvicorn.error   Waiting for application startup.
+2023-08-01 21:45:37 INFO     uvicorn.error   Application startup complete.
+2023-08-02 16:11:50 INFO     uvicorn.error   Will watch for changes in these directories: ['/chroma']
+2023-08-02 16:11:50 INFO     uvicorn.error   Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2023-08-02 16:11:50 INFO     uvicorn.error   Started reloader process [1] using WatchFiles
+2023-08-02 16:11:51 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-02 16:11:52 DEBUG    chromadb.config Starting component System
+2023-08-02 16:11:52 DEBUG    chromadb.config Starting component Posthog
+2023-08-02 16:11:52 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-02 16:11:52 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-02 16:11:52 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-02 16:11:52 INFO     uvicorn.error   Started server process [8]
+2023-08-02 16:11:52 INFO     uvicorn.error   Waiting for application startup.
+2023-08-02 16:11:52 INFO     uvicorn.error   Application startup complete.
+2023-08-02 16:33:53 WARNING  uvicorn.error   WatchFiles detected changes in 'my_streamlit/app.py'. Reloading...
+2023-08-02 16:33:53 INFO     uvicorn.error   Shutting down
+2023-08-02 16:33:53 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-02 16:33:53 INFO     uvicorn.error   Application shutdown complete.
+2023-08-02 16:33:53 INFO     uvicorn.error   Finished server process [8]
+2023-08-02 16:44:16 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-02 16:44:17 DEBUG    chromadb.config Starting component System
+2023-08-02 16:44:17 DEBUG    chromadb.config Starting component Posthog
+2023-08-02 16:44:17 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-02 16:44:17 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-02 16:44:17 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-02 16:44:17 INFO     uvicorn.error   Started server process [26]
+2023-08-02 16:44:17 INFO     uvicorn.error   Waiting for application startup.
+2023-08-02 16:44:17 INFO     uvicorn.error   Application startup complete.
+2023-08-02 17:05:12 WARNING  uvicorn.error   WatchFiles detected changes in 'my_streamlit/app.py'. Reloading...
+2023-08-02 17:05:12 INFO     uvicorn.error   Shutting down
+2023-08-02 17:05:12 INFO     uvicorn.error   Waiting for application shutdown.
+2023-08-02 17:05:12 INFO     uvicorn.error   Application shutdown complete.
+2023-08-02 17:05:12 INFO     uvicorn.error   Finished server process [26]
+2023-08-02 17:05:15 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-02 17:05:16 DEBUG    chromadb.config Starting component System
+2023-08-02 17:05:16 DEBUG    chromadb.config Starting component Posthog
+2023-08-02 17:05:16 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-02 17:05:16 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-02 17:05:16 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-02 17:05:16 INFO     uvicorn.error   Started server process [43]
+2023-08-02 17:05:16 INFO     uvicorn.error   Waiting for application startup.
+2023-08-02 17:05:16 INFO     uvicorn.error   Application startup complete.
+2023-08-02 18:10:37 INFO     uvicorn.error   Will watch for changes in these directories: ['/chroma']
+2023-08-02 18:10:37 INFO     uvicorn.error   Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2023-08-02 18:10:37 INFO     uvicorn.error   Started reloader process [1] using WatchFiles
+2023-08-02 18:10:38 INFO     chromadb.telemetry.posthog Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2023-08-02 18:10:38 DEBUG    chromadb.config Starting component System
+2023-08-02 18:10:38 DEBUG    chromadb.config Starting component Posthog
+2023-08-02 18:10:38 DEBUG    chromadb.config Starting component SqliteDB
+2023-08-02 18:10:38 DEBUG    chromadb.config Starting component LocalSegmentManager
+2023-08-02 18:10:38 DEBUG    chromadb.config Starting component SegmentAPI
+2023-08-02 18:10:38 INFO     uvicorn.error   Started server process [8]
+2023-08-02 18:10:38 INFO     uvicorn.error   Waiting for application startup.
+2023-08-02 18:10:38 INFO     uvicorn.error   Application startup complete.
+2023-08-02 18:12:52 INFO     uvicorn.access  172.18.0.1:58608 - "GET / HTTP/1.1" 404
+2023-08-02 18:12:53 INFO     uvicorn.access  172.18.0.1:58608 - "GET /favicon.ico HTTP/1.1" 404
